@@ -52,7 +52,7 @@ const Gameboard = () =>{
         
  setSecretNumber(secret);
 
- console.log(secret);
+ sessionStorage.setItem("computer_number",secret);
        }, []);
    
     return ;
