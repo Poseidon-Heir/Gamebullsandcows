@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Gamebullsandcows/static/css/main.685695db.css",
+    "main.js": "/Gamebullsandcows/static/js/main.d5d3eb32.js",
+    "static/js/787.ac26a903.chunk.js": "/Gamebullsandcows/static/js/787.ac26a903.chunk.js",
+    "index.html": "/Gamebullsandcows/index.html",
+    "main.685695db.css.map": "/Gamebullsandcows/static/css/main.685695db.css.map",
+    "main.d5d3eb32.js.map": "/Gamebullsandcows/static/js/main.d5d3eb32.js.map",
+    "787.ac26a903.chunk.js.map": "/Gamebullsandcows/static/js/787.ac26a903.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.685695db.css",
+    "static/js/main.d5d3eb32.js"
+  ]
+}
