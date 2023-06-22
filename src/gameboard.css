@@ -3,8 +3,15 @@ input{
     height:50px;
     margin:10px;
     font-size: xx-large;
+    border-color: rgb(0, 0, 0);
 }
 .gamestation{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.gamecontainer{
+    width: 50%;
+}
+.attemptdata{
+    width:250px;
 }

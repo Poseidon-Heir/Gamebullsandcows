@@ -13,8 +13,8 @@ const Gameboard = () =>{
     const [thousands, setThousands] = useState("");
  
     const [result, setResult] = useState("");
-
-  
+    const [attempts,setAttempts] = useState([]);
+    
     const [guess, setGuess] = useState("");
     const [buttonstate,setButtonstate]=useState(false);
     
@@ -65,7 +65,8 @@ const Gameboard = () =>{
     //  console.log(givennumber);
     // console.log(guess);
     if (givennumber.length !== 4 || isNaN(Number(givennumber)) || thousands===tens || hundreds === tens || ones=== tens || thousands===ones || hundreds === ones || ones=== tens ||hundreds === thousands) {
-      setResult('Invalid guess! Please enter a 4-digit number.');
+      // setResult('Invalid guess! Please enter a 4-digit number.');
+      alert('Invalid guess! Please enter a 4-digit number.');
       return;
     }
 //    console.log("guess is");
@@ -83,9 +84,12 @@ const Gameboard = () =>{
 
     if (bulls === 4) {
       setResult("Congratulations! You guess the secret number.");
+      setAttempts("");
       setButtonstate(true);
     } else {
-      setResult(`Bulls: ${bulls}, Cows: ${cows}`);
+      const tries = `Bulls: ${bulls}, Cows: ${cows} : ${givennumber} `;
+      // setResult(`Bulls: ${bulls}, Cows: ${cows} `);
+      setAttempts((t)=>[...t,tries]);
       console.log(`Bulls: ${bulls}, Cows: ${cows}`);
     }
     setGuess(thousands+hundreds+tens+ones);
@@ -121,7 +125,7 @@ const Gameboard = () =>{
  
 
      return (
-        <div>
+        <div className="gamecontainer">
             <div className="gamestation">
               <input
           type="text"
@@ -162,8 +166,8 @@ const Gameboard = () =>{
        <button  onClick={handleGuess} disabled={buttonstate}>Check</button>
        </div>
         <h2>Your Guess: {thousands}{hundreds}{tens}{ones}</h2>
-       <div style={{display:"flex",flexDirection:"column",width:"500px",alignItems:"center"}}><h3>{result}</h3></div>
-      <button onClick={()=> window.location.reload(true)}>Reset</button>
+       <div style={{display:"flex",flexDirection:"column",width:"500px",alignItems:"center"}}><h3>{result} <p className="attemptdata">{attempts}</p></h3></div>
+      {/* <button onClick={()=> window.location.reload(true)}>Reset</button> */}
       </div>
     );
 
