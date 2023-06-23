@@ -19,7 +19,7 @@ const Gameboard = () =>{
     const [buttonstate,setButtonstate]=useState(false);
     
    
-    console.log(guess);
+    // console.log(guess);
    
     
         
@@ -90,37 +90,13 @@ const Gameboard = () =>{
       const tries = `Bulls: ${bulls}, Cows: ${cows} : ${givennumber} `;
       // setResult(`Bulls: ${bulls}, Cows: ${cows} `);
       setAttempts((t)=>[...t,tries]);
-      console.log(`Bulls: ${bulls}, Cows: ${cows}`);
+      // console.log(`Bulls: ${bulls}, Cows: ${cows}`);
     }
     setGuess(thousands+hundreds+tens+ones);
   }
   
 
-//   //validates
-//    const forones = (e:any) =>{
-   
-//     setOnes(e.target.value);
-//     setGuess(thousands+hundreds+tens+ones);
-//    
 
-//     console.log("before if")
-//     console.log(/[0-9]/.test(ones));
-//     if(/[0-9]/.test(ones))
-//     {
-//         console.log('pretest');
-//         console.log(ones);
-//         console.log(/[0-9]/.test(ones));
-//         // setButtonstate(!/[0-9]/.test(ones));
-//         setResult('');
-//        return ;
-//     }
-    
-//         setResult('Invalid guess! Please enter a 4-digit number.');
-//         console.log(ones);
-//         console.log(/[0-9]/.test(ones));
-//         // setButtonstate(false);
-    
-//   }
 
  
 
@@ -166,8 +142,7 @@ const Gameboard = () =>{
        <button  onClick={handleGuess} disabled={buttonstate}>Check</button>
        </div>
         <h2>Your Guess: {thousands}{hundreds}{tens}{ones}</h2>
-       <div style={{display:"flex",flexDirection:"column",width:"500px",alignItems:"center"}}><h3>{result} <p className="attemptdata">{attempts}</p></h3></div>
-      {/* <button onClick={()=> window.location.reload(true)}>Reset</button> */}
+       <div style={{display:"flex",flexDirection:"column",width:"500px"}}><h3>{result} <p className="attemptdata">{attempts}</p></h3></div>
       </div>
     );
 

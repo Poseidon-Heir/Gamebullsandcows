@@ -8,7 +8,7 @@ input{
 }
 .gamestation{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .gamecontainer{
     width: 40%;
