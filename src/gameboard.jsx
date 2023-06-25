@@ -18,7 +18,8 @@ const Gameboard = () =>{
     const [guess, setGuess] = useState("");
     const [buttonstate,setButtonstate]=useState(false);
     
-   
+   const [count,setCount] = useState(0);
+
     // console.log(guess);
    
     
@@ -73,6 +74,7 @@ const Gameboard = () =>{
 //    console.log(givennumber);
     let bulls = 0;
     let cows = 0;
+    setCount(count+1);
 
     for (let i = 0; i <4; i++) {
       if (givennumber[i] === secretNumber[i]) {
@@ -83,9 +85,10 @@ const Gameboard = () =>{
     }
 
     if (bulls === 4) {
-      setResult("Congratulations! You guess the secret number.");
+      setResult(`Congratulations! You guess the secret number. In ${count} attempts`);
       setAttempts("");
       setButtonstate(true);
+      
     } else {
       const tries = `Bulls: ${bulls}, Cows: ${cows} : ${givennumber} `;
       // setResult(`Bulls: ${bulls}, Cows: ${cows} `);

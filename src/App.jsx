@@ -4,9 +4,11 @@
 import './App.css'
 import Footer from './footer'
 import Gameboard from './gameboard'
+import Instructions from './instructions';
 
 function App() {
   // const [count, setCount] = useState(0)
+
  
  const reveal = () =>{
   const answer =  sessionStorage.getItem("computer_number");
@@ -17,12 +19,14 @@ function App() {
  }
 
   return <div className='container'>
-   <div style={{display:'flex',justifyContent:"space-between",width:"100%"}}>
+   
+   <div style={{display:'flex',justifyContent:"space-between",width:"100%",padding:"40px"}}>
     <button className='resetoption'   onClick={()=> window.location.reload(true)}>Reset</button>
     <button className='answer' onClick={reveal}>Answer</button>
     </div>
           <h1>Bulls and Cows</h1>
 <Gameboard/>
+<Instructions/>
 <Footer/>
   </div>
     
