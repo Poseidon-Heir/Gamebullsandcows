@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Gamebullsandcows/static/css/main.3bd411bf.css",
-    "main.js": "/Gamebullsandcows/static/js/main.a5e3515e.js",
+    "main.js": "/Gamebullsandcows/static/js/main.9c6d317f.js",
     "static/js/787.ac26a903.chunk.js": "/Gamebullsandcows/static/js/787.ac26a903.chunk.js",
     "index.html": "/Gamebullsandcows/index.html",
     "main.3bd411bf.css.map": "/Gamebullsandcows/static/css/main.3bd411bf.css.map",
-    "main.a5e3515e.js.map": "/Gamebullsandcows/static/js/main.a5e3515e.js.map",
+    "main.9c6d317f.js.map": "/Gamebullsandcows/static/js/main.9c6d317f.js.map",
     "787.ac26a903.chunk.js.map": "/Gamebullsandcows/static/js/787.ac26a903.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3bd411bf.css",
-    "static/js/main.a5e3515e.js"
+    "static/js/main.9c6d317f.js"
   ]
 }
