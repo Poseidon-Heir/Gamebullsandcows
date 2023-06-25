@@ -10,8 +10,8 @@ export default function Instructions (){
         <li>The number can start with a Zero.</li>
         <li>Bulls Represent the Digit is placed in correct position.</li>
         <li>Cows Represent the Digit in the answer but not placed correctly</li>
-        <li>when you 4 bulls you Win!!.</li>
-        <li>Duplicates in digit or letters show invalid input</li>
+        <li>when you have 4 bulls you Win!!.</li>
+        <li>Duplicates digits or letters show invalid input</li>
     </ul>
     
 
