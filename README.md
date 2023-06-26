@@ -1,3 +1,20 @@
+Hey,
+This is my first React Project to be deployed,
+It's a simple game guessing a 4 digit number called BullsandCows.
+Hope you will like , leave a Star ⭐️ if you do ! 
+
+Clone the Repo and tinker with it and make your own version.
+
+To play the Game here: https://poseidon-heir.github.io/Gamebullsandcows/ 
+
+Enjoy ✌🏼 Peace !
+
+For more info about development : scroll below --> 
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
