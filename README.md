@@ -1,13 +1,13 @@
 Hey,
 This is my first React Project to be deployed,
-It's a simple game guessing a 4 digit number called BullsandCows.
-Hope you will like , leave a Star ⭐️ if you do ! 
+It's a simple guessing game called BullsandCows.
+Hope you will like it,  leave a Star ⭐️ if you do 🤩 ! 
 
 Clone the Repo and tinker with it and make your own version.
 
 To play the Game here: https://poseidon-heir.github.io/Gamebullsandcows/ 
 
-Enjoy ✌🏼 Peace !
+Enjoy ✌🏼 Peace ! -KB(Poseidon-Heir)😎
 
 For more info about development : scroll below --> 
 
