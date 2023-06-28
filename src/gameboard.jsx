@@ -54,7 +54,7 @@ const Gameboard = () => {
       setSecretNumber(secret);
 
       sessionStorage.setItem("computer_number", secret);
-    }, [secret]);
+    }, []);
 
     return;
 
