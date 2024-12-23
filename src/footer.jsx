@@ -4,7 +4,7 @@ const Footer = () => {
 
 
     return (
-        <div className="nameplate"><h5>@KiranIkshvaku</h5></div>
+        <div className="nameplate"><h5>@Ikshvaku</h5></div>
     )
 
 }
